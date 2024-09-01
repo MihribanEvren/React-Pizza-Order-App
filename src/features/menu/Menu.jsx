@@ -5,7 +5,7 @@ import MenuItem from './MenuItem';
 function Menu() {
   const menu = useLoaderData();
   return (
-    <ul>
+    <ul className="px-2 divide-y divide-stone-200">
       {menu.map((pizza) => (
         <MenuItem pizza={pizza} key={pizza.id} />
       ))}
