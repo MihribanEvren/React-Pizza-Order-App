@@ -11,7 +11,7 @@ import {
 
 function Order() {
   const order = useLoaderData();
-  console.log(order);
+
   const {
     id,
     status,
@@ -53,7 +53,7 @@ function Order() {
 
       <ul className="divide-y border-y divide-stone-200">
         {cart.map((item) => (
-          <OrderItem item={item} key={item.id} />
+          <OrderItem item={item} key={item.pizzaId} />
         ))}
       </ul>
 
